@@ -4,31 +4,51 @@
 	<title>Events Calendar - Tech Club RIT</title>
 </head>
 
-<style type="text/css">
-	.googleCalendar{
-		position: relative;
-		height: 0;
-		width: 100%;
-		padding-bottom: 100% ;
-	}
-	.googleCalendar iframe{
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+ <style>
+ @media (max-width: 550px) {
+     .big-container {
+         display: none;
+     }
+ }
+ @media (min-width: 550px) {
+     .small-container {
+         display: none;
+     }
+ }
+ /* Responsive iFrame */
+ .responsive-iframe-container {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: hidden;
+ }
+ .responsive-iframe-container iframe,   
+ .vresponsive-iframe-container object,  
+ .vresponsive-iframe-container embed {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+ }
+ </style>
 <body>
 
-	<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=techclubrit%40gmail.com&amp;color=%231B887A&amp;ctz=Asia%2FCalcutta" style="border-width:0" width="100%" height="700px" frameborder="0" scrolling="no"></iframe>
+	
+	<!--<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=techclubrit%40gmail.com&amp;color=%231B887A&amp;ctz=Asia%2FCalcutta" style="border-width:0" width="100%" height="650" frameborder="0" scrolling="no"></iframe>-->
 
 
-	<!--<div class="googleCalendar">
-		<iframe src="https://calendar.google.com/calendar/embed?title=Tech%20Club%20RIT&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=techclubrit%40gmail.com&amp;color=%238D6F47&amp;ctz=Asia%2FCalcutta"
+	 <div class="responsive-iframe-container big-container">
+		<iframe src="https://calendar.google.com/calendar/embed?title=Tech%20Club%20RIT&amp;showCalendars=0&amp;height=700&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=techclubrit%40gmail.com&amp;color=%238D6F47&amp;ctz=Asia%2FCalcutta"
 		style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-	</div>-->
+	 </div>
 
+	
+	 <div class="responsive-iframe-container small-container">
+		<iframe src="https://calendar.google.com/calendar/embed?title=Tech%20Club%20RIT&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=800&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=techclubrit%40gmail.com&amp;color=%238D6F47&amp;ctz=Asia%2FCalcutta"
+		style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+	 </div>
 
 </body>
 </html>
